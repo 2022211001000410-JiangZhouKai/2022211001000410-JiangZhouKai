@@ -5,13 +5,27 @@
          version="4.0">
     <!--add code about new servlet-->
     <servlet>
-        <servlet-name>anyName</servlet-name>
+        <servlet-name>anyname</servlet-name>
         <servlet-class>com.dabing.week2.demo.HelloWordServlet</servlet-class><!--package +name of servlet class -->
     </servlet>
-<servlet-mapping>
-    <servlet-name>anyName</servlet-name>
-    <url-pattern>/hello</url-pattern>
-</servlet-mapping>
-    <!-- x==5, a=x so we can say a=5
-    so/hello==com.dabing.week2.demo.HelloWordServlet-->
+    <servlet>
+        <servlet-name>LifeCycleServlet</servlet-name>
+        <servlet-class>com.JiangZhouKai.week3.demo.LifeCycleServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.JiangZhouKai.week3.demo.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+       <servlet-name>anyname</servlet-name><url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+         <servlet-name>LifeCycleServlet</servlet-name>
+         <url-pattern>/Life</url-pattern>
+         <!--/Life ==LifeCycleServlet== com.JiangZhouKai.week3.demo.LifeCycleServlet-->
+     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
 </web-app>

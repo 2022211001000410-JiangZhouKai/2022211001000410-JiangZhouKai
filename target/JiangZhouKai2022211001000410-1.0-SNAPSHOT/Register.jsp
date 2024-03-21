@@ -19,14 +19,13 @@
 <body>
 <h1>New User Registration</h1>
 <div>
-    <form>
-        <input type="text" placeholder="UserName"><br/>
-        <input type="text" placeholder="ID"><br/>
-        <input type="email" placeholder="Email"><br/>
-        <label>Gender : </label>
-        <label><input type="radio" name="gender">Male</label>
-        <label><input type="radio" name="gender">Female</label><br/>
-        <input type="text" placeholder="Date of Birth (yyyy-mm-dd)"><br/>
+    <form method="post" action="Register" >
+        UserName<input type="text" name="UserName"><br/>
+        ID <input type="ID" name="ID"><br/>
+        email <input type="text" name="Email"><br/>
+        gender: <label><input type="radio" name="gender" value="Male">Male</label>
+        <label><input type="radio" name="gender" value="Female">Female</label><br/>
+        Date of birth : <input type="text name" name="birthDate" placeholder="birthDate"><br/>
         <input type="submit" value="Register"/>
     </form>
 
